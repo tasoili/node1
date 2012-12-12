@@ -1,7 +1,7 @@
 function route(handle, pathname) {
     console.log("In comes a request for " + pathname);
     
-    if (typeof(handle[pathname] === 'function')) {
+    if (typeof(handle[pathname]) === 'function') {
         handle[pathname]();
     }
     else {
